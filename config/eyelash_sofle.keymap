@@ -40,20 +40,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        CHARACTER {
+        CHAR {
             bindings = <
 &kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9     &kp N0           &kp BACKSPACE
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O      &kp P            &kp BSLH
 &kp LEFT_SHIFT  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L      &kp SEMI         &kp APOS
-&kp LCTRL       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT    &kp FSLH         &kp DEL
+&kp LCTRL       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT    &kp FSLH         &kp ESCAPE
 &kp C_MUTE      &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "Characters";
+            display-name = "CHAR";
         };
 
-        NAVIGATION {
+        NAV {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp HOME        &kp END         &kp PAGE_UP   &kp PAGE_DOWN    &trans  &trans
@@ -62,7 +62,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans          &mo 3           &trans        &trans           &trans
             >;
 
-            label = "Navigations";
+            label = "NAV";
         };
 
         SYMBOL {
@@ -75,19 +75,19 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "Symbols";
+            label = "SYMBOL";
         };
 
         FN {
             bindings = <
-&bt BT_NXT  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10  &trans
+&bt BT_NXT  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10  &kp DEL
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F11  &kp PRINTSCREEN
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &rgb_ug RGB_HUI  &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp F12  &trans
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans           &trans           &trans           &trans           &trans   &trans
 &kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
-            display-name = "Functions";
+            display-name = "FN";
             sensor-bindings = <&scroll_encoder>;
         };
     };
