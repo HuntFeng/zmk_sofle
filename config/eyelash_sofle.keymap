@@ -67,10 +67,10 @@
 
         SYMBOL {
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp TILDE  &trans    &trans  &trans     &trans      &trans         &mmv MOVE_DOWN   &kp PLUS   &kp MINUS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH          &trans
-&trans     &trans    &trans  &trans     &trans      &trans         &mmv MOVE_LEFT   &kp STAR   &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE               &trans
-&trans     &trans    &trans  &trans     &trans      &trans         &mmv MOVE_RIGHT  &kp UNDER  &kp EQUAL  &kp LESS_THAN         &kp GREATER_THAN       &trans                 &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &trans
+&kp TILDE  &trans    &trans  &trans     &trans      &trans         &mmv MOVE_DOWN   &kp PLUS   &kp MINUS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &kp PIPE
+&trans     &trans    &trans  &trans     &trans      &trans         &mmv MOVE_LEFT   &kp STAR   &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON     &kp DOUBLE_QUOTES
+&trans     &trans    &trans  &trans     &trans      &trans         &mmv MOVE_RIGHT  &kp UNDER  &kp EQUAL  &kp LESS_THAN         &kp GREATER_THAN       &kp QUESTION  &trans
 &trans     &trans    &trans  &trans     &mo 3       &trans         &mkp LCLK        &trans     &trans     &trans                &trans                 &trans
             >;
 
